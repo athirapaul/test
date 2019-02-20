@@ -10,4 +10,12 @@ import Foundation
 
 print("Hello, World!")
 
-var h :Int = 10
+protocol FullyNamed {
+    var fullName: String { get }
+}
+struct Person: FullyNamed {
+    var fullName: String
+}
+let john = Person(fullName: "John Appleseed")
+// john.fullName is "John Appleseed"
+print(john)
