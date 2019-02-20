@@ -10,3 +10,4 @@ import Foundation
 
 print("Hello, World!")
 
+var h :Int = 10
